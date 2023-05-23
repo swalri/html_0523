@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="optest01.html" method="post">
+		<table>
+			<tr>
+				<td colspan="2">
+					<div>
+						다음 <b style="background: orange;">내용에 맞게 입력</b>하시오.
+					</div>
+				</td>
+				<td rowspan="5"><img alt="이미지 입니다" src="img.png" width="200px"
+					height="200px"></td>
+			</tr>
+			<tr>
+				<td colspan="2">전공 분야를 입력하세요. <select size="1" name="test">
+						<option value="Software">소프트웨어</option>
+						<option value="Robot">로봇</option>
+						<option value="System">시스템</option>
+						<option value="Service">서비스</option>
+						<option value="Education">교육</option>
+				</select>
+				</td>
+			</tr>
+			<!-- 이름 -->
+			<tr>
+				<td>이름</td>
+				<td><input type="text" name="name" placeholder="이름"></td>
+			</tr>
+			<!-- 아이디 -->
+			<tr>
+				<td>아이디</td>
+				<td><input type="text" name="addr" placeholder="아이디"></td>
+			</tr>
+			<!-- 비밀번호 -->
+			<tr>
+				<td>비밀번호</td>
+				<td><input type="password" name="pwd" placeholder="비밀번호"></td>
+			</tr>
+			<!-- 성별 -->
+			<tr>
+				<td colspan="3">&nbsp;성별 조사<br>&nbsp; 여성<input
+					type="radio" name="sex" value="0" checked="checked"> 남성 <input
+					type="radio" name="sex" value="1">
+				</td>
+			</tr>
+			<!-- 취미 체크박스 -->
+			<tr>
+				<td colspan="3">&nbsp;취미 조사<br>&nbsp; <label for="h1">책읽기</label>
+					<input type="checkbox" name="hobby" value="1" id="h1"> <label>공부하기</label>
+					<input type="checkbox" name="hobby" value="2"> <label>책
+						읽으며 공부하기</label> <input type="checkbox" name="hobby" value="3"> <label
+					for="id">컴퓨터</label> <input type="checkbox" name="hobby" value="4">
+				</td>
+			</tr>
+			<!-- 하고싶은말 문자열-->
+			<tr>
+				<td colspan="3">&nbsp;하고 싶은 말<br>&nbsp; <textarea rows="3"
+						name="con" cols="50" placeholder="내용"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="5"><input type="submit" value="완료"> <input
+					type="reset" value="다시작성"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

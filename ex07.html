@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	div & span
+	<br> - 태그를 그룹화할 경우 사용
+	<br> - 그룹화가 되면 css적용시 편리하다
+	<br> - div : 인라인, 블록태그 모두 포함
+	<br> - span : 인라인 태그만 포함
+	<br>
+	<div style="background: aqua;">블록</div>
+	<span style="background: blue">인라인방식</span>
+
+	<div style="background: aqua;">
+		<span style="background: blue">인라인방식</span> <span
+			style="background: blue">인라인방식</span>
+	</div>
+	<hr>
+	required : 필수 입력 사항이 되며 검증까지 해준다.
+	<br> pattern : 정규표현식을 넣어서 사용하며 \d는 숫자의미 {n} 숫자 개수의미
+	<br> readonly : 읽기 전용
+	<br> disabled : 비활성화
+	<br>
+	<form action="ex06.html">
+		<input type="text" placeholder="아이디" required="required"><br>
+		<input type="email" placeholder="test@t.t"><br> <input
+			type="tel" placeholder="010-xxxx-xxxx" pattern="\d{3}-\d{3,4}-\d{4}"><br>
+		<hr>
+		<input type="submit" value="submit"> <input type="button"
+			value="button">
+		<hr>
+		<button type="submit" disabled="disabled">버튼1</button>
+		<button type="button">버튼2</button>
+	</form>
+
+	<h3>lable</h3>
+	- input, textarea, select들의 제목을 넣는 태그
+	<form action="">
+		<fieldset>
+			<legend>취미조사</legend>
+			<input id="id"><br> <label for="h1">책읽기</label> <input
+				type="checkbox" name="hobby" value="1" id="h1"> <label>멍타기</label>
+			<input type="checkbox" name="hobby" value="2"> <label>게임</label>
+			<input type="checkbox" name="hobby" value="3"> <label
+				for="id">아이디</label>
+		</fieldset>
+		<input type="submit" value="전송">
+	</form>
+
+	<hr>
+
+	<form method="get">
+		<!--  -->
+		<label style="">aaa</label> <input type="radio" name="age" value="10">
+		10대 <input type="radio" name="age" value="20"> 20대 <select
+			size="1" name="test">
+			<option value="apple">사과
+			<option>수박
+			<option>딸기
+		</select> <input type="submit" value="전송">
+	</form>
+
+	<hr>
+	<form action="ex06.html">
+		<input type="text" name="name" placeholder="input name"><br>
+		<input type="text" name="addr" placeholder="input address"><br>
+		<textarea rows="3" name="con" cols="50" placeholder="내용"></textarea>
+		<br> <input type="reset" value="초기화"> <input
+			type="submit" value="전송"> <input type="button" value="버튼">
+	</form>
+
+	<hr>
+
+	<input type="checkbox" checked="checked"> 10대
+	<input type="checkbox"> 20대
+	<input type="checkbox"> 30대
+	<input type="checkbox"> 40대
+
+	<hr>
+
+	<input type="radio" name="age" checked="checked"> 10대
+	<input type="radio" name="age"> 20대
+	<input type="radio" name="age"> 30대
+	<input type="radio" name="age"> 40대
+
+	<hr>
+
+	<h3>input</h3>
+	- 데이터를 입력받은 태그
+	<br> - type속성에 따라 형식이 달라진다
+	<br>
+	<br>
+	<input type="button" value="버튼">
+	<input type="submit" value="서브밋">
+	<input type="reset" value="초기화">
+	<input type="image" src="img.jpg" width="100">
+	<br>
+	<input type="file">
+	<br>
+	<br>
+	<input type="text" value="값 입력">
+	<br>
+	<input type="password" value="비밀번호">
+	<br>
+	<!-- 이메일 예시 -->
+	<input type="email" placeholder="test@test.t">
+	<br>
+	<!-- 값 간편 삭제 -->
+	<input type="search" value="값 입력시 x버튼 생성">
+	<br>
+	<input type="tel" value="010-555-555">
+	<br>
+	<!-- 숫자 지정 -->
+	<input type="number" min="1" max="10" value="1">
+	<br>
+	<br>
+	<!-- 색선택 -->
+	<input type="color">
+	<br>
+	<!--  -->
+	<input type="range">
+	<br>
+	<!-- 한번마체크됨 -->
+	<input type="radio">
+	<br>
+	<input type="checkbox">
+	<br>
+	<!-- 안보임 -->
+	<input type="hidden" value="값을 숨김">
+	<br>
+	<!-- 읽기전용 -->
+	<input type="text" value="읽기전용" readonly="readonly">
+	<br>
+
+
+
+
+
+</body>
+</html>
